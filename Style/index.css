@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: arial, sans-serif;
+}
+.top_nav{
+    display: flex;
+justify-content: flex-end;
+gap: 14px;
+/* height: 60px; */
+align-items: center;
+padding: 10px;
+}
+.top_nav>img{
+    width:3%;
+    height: 52%;
+    /* border-radius: 1000px; */
+
+}
+.top_nav>img:hover{
+    border: 1px solid #eeeeee;
+    border-radius: 50px;
+    padding: 0;
+    cursor: pointer;
+}
+.gb_Ue{
+    width: 2.7%;
+    color: #000000DE;
+    padding: 8px;
+}
+.gb_Ue:hover{
+background-color: #eeeeee;
+border-radius: 26px;
+cursor: pointer;
+}
+.top_nav>a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.top_nav>a{
+    color: #000000DE;
+    font-size: 13px;
+    font-family: arial,sans-serif;
+    text-decoration: none;
+}
+
+
+/* ________________Profile drop__________________ */
+
+.pro-main-box{
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+   visibility: hidden;
+
+   /* position: absolute;
+   top: -60%; */
+
+}
+.pro-drop{
+
+   display: flex;
+   width: 22%;
+   text-align: center;
+padding: 20px;
+   flex-direction: column;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  align-items: center;
+}
+.pro-img{
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+}
+.pro-img>img{
+  padding: 5px;
+    margin: auto;
+    width: 35%;    
+}
+.pro-text{
+    text-align: center;
+    padding: 10px;
+    
+}
+.pro-text>h3{
+font-weight: 500;
+font-size: 16px;
+}
+.pro-text>p{
+    color: #666666;
+    font-size: 14px;
+}
+.pro_btn{
+    padding: 5px;
+}
+.pro_btn>button{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    border: 0.5px solid gainsboro;
+    border-radius: 20px;
+    /* height: 40px; */
+    margin-bottom: 15px;
+}
+.pro_btn>button:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+}
+.pro-about{
+    display: flex;
+    align-self: flex-start;
+    padding: 10px;
+    width: 100%;
+    border-top: 0.5px solid #eeeeee;
+    border-bottom: 0.5px solid #eeeeee;
+    margin-bottom: 5px;
+}
+.pro-about>a{
+color: rgb(40, 40, 40);
+text-decoration: none;
+font-size: 15px;
+}
+
+.pro-git{
+    margin-top: 5px;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 1px solid #eeeeee;
+    margin-bottom: 5px;
+}
+.pro-git>a{
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+}
+.pro-git:hover{
+    background-color: aliceblue;
+}
+.pro-edu{
+    border-top: 1px solid #eeeeee;
+    margin-top: 5px;
+    width: 100%;
+    padding-top: 15px;
+}
+.pro-edu>a{
+    font-size: 12px;
+    color: #666666;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* _________________________MAP Drop__________________________________ */
+.map-main-box{
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+   visibility: hidden; 
+   position: absolute;
+   right: 3%;
+
+}
+
+.map-drop{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    width: 22%;
+    text-align: center;
+ padding: 30px;
+    flex-direction: column;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   align-items: center;
+   padding-bottom: 18px;
+   /* height: 300px; */
+   /* /* position: absolute; */
+   top: -50%; 
+}
+.map-drop>div:hover{
+    padding: 10px;
+    cursor: pointer;
+ background-color: aliceblue;
+}
+.map-drop>div{
+    padding: 10px;
+}
+
+.map-drop>div>a>img{
+    width: 60%;
+    margin-bottom: 5px;
+}
+.map-drop>div>p{
+    font-size: 14px;
+    color: #666666;
+    margin-top: 2px;
+}
+
+/* ____________________________________main-page-google________________________________ */
+
+
+#imagetag{
+    position: fixed;
+    top: 16%;
+    left: 25%;
+    width: 50%;
+    border: 1px solid black;
+
+}
+.name-google{
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+.name-google>img{
+    width: 40%;
+    margin: auto;
+
+}
+.search_box{
+    display: flex;
+    justify-content: center;
+}
+.search_box>input{
+    width: 75%;
+    border-radius: 150px;
+    height: 45px;
+    padding: 10px;
+}
