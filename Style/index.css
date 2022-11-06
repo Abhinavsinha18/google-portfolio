@@ -5,19 +5,21 @@
 }
 body{
     font-family: arial, sans-serif;
+    background-image: url("https://external-preview.redd.it/Myc9mudJQDI7WPc58vh-B-duOS_SZ_ZMRvzGDfwRxRA.jpg?auto=webp&s=f47ef340e0e7dd64857a0352fb9686b9a48625c2");
+    background-size: cover;
 }
 .top_nav{
     display: flex;
 justify-content: flex-end;
-gap: 14px;
+gap: 20px;
 /* height: 60px; */
 align-items: center;
 padding: 10px;
 }
 .top_nav>img{
-    width:3%;
-    height: 52%;
-    /* border-radius: 1000px; */
+    width:2%;
+    height: 30px;
+    border-radius: 1000px;
 
 }
 .top_nav>img:hover{
@@ -27,9 +29,10 @@ padding: 10px;
     cursor: pointer;
 }
 .gb_Ue{
-    width: 2.7%;
-    color: #000000DE;
+    width: 2.3%;
+    background-color: white;
     padding: 8px;
+    border-radius: 26px;
 }
 .gb_Ue:hover{
 background-color: #eeeeee;
@@ -42,7 +45,7 @@ cursor: pointer;
 }
 
 .top_nav>a{
-    color: #000000DE;
+    color: white;
     font-size: 13px;
     font-family: arial,sans-serif;
     text-decoration: none;
@@ -56,19 +59,21 @@ cursor: pointer;
     justify-content: right;
     padding-right: 20px;
    visibility: hidden;
-
+   transition: width 1s ease-in-out;
    /* position: absolute;
    top: -60%; */
-
+   
 }
 .pro-drop{
-
+ background-color: white;
+    z-index: 10;
+    transition: width 1s ease-in-out;
    display: flex;
    width: 22%;
    text-align: center;
 padding: 20px;
    flex-direction: column;
-   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   box-shadow: 0px 1px 2px 0px rgb(60 64 67 / 30%), 0px 2px 6px 2px rgb(60 64 67 / 15%);
   align-items: center;
 }
 .pro-img{
@@ -77,9 +82,11 @@ padding: 20px;
     justify-content: center;
 }
 .pro-img>img{
-  padding: 5px;
+  /* padding: 5px; */
+  height: 100px;
     margin: auto;
-    width: 35%;    
+    /* width: 100%; */
+    border-radius: 60px;    
 }
 .pro-text{
     text-align: center;
@@ -96,20 +103,24 @@ font-size: 16px;
 }
 .pro_btn{
     padding: 5px;
+    margin-bottom: 15px;
 }
-.pro_btn>button{
+.pro_btn>a{
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 10px;
+    color: rgb(17, 17, 17);
+    text-decoration: none;
     padding-bottom: 10px;
+    font-size: 14px;
     background-color: white;
     border: 0.5px solid gainsboro;
     border-radius: 20px;
     /* height: 40px; */
-    margin-bottom: 15px;
 }
-.pro_btn>button:hover{
+.pro_btn>a:hover{
     cursor: pointer;
+    /* z-index: 1; */
     background-color: aliceblue;
 }
 .pro-about{
@@ -163,13 +174,14 @@ font-size: 15px;
    visibility: hidden; 
    position: absolute;
    right: 3%;
-
+   transition: width 1s ease-in-out;
 }
 
 .map-drop{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 15px;
+    background-color: white;
     width: 22%;
     text-align: center;
  padding: 30px;
@@ -177,6 +189,7 @@ font-size: 15px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
    align-items: center;
    padding-bottom: 18px;
+   transition: width 1s ease-in-out;
    /* height: 300px; */
    /* /* position: absolute; */
    top: -50%; 
@@ -208,26 +221,178 @@ font-size: 15px;
     top: 16%;
     left: 25%;
     width: 50%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 .name-google{
     display: flex;
     padding: 5px;
     justify-content: center;
+    margin-bottom: 10px;
 }
 .name-google>img{
     width: 40%;
     margin: auto;
 
 }
-.search_box{
+.search-container{
     display: flex;
     justify-content: center;
+    margin-bottom: 15px;
+    /* border: 1px solid black; */
+}
+.search_box{
+    width: 75%;
+    /* height: 50px; */
+    display: flex;
+    align-items: center;
+    /* border-radius: 100px; */
+  
+    z-index: 3;
+    height: 47px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+
+
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#big-div{
+    /* z-index: 10; */
+    position: fixed;
+    /* border: 1px solid black; */
+    height: 600px;
+    width: 100%;
+}
+.search_box:hover{
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+.search_box>input:focus{
+    outline: 0;
 }
 .search_box>input{
-    width: 75%;
-    border-radius: 150px;
-    height: 45px;
+    height: 30px;
     padding: 10px;
+   caret-color: #484848;
+  
+    font-size: 15px;
+    border: none;
+    width: 85%;
+    cursor: text;
+}
+.search-mic{
+    width: 4.2%;
+    margin: 5px;
+    height: 25px;
+}
+
+/* _______________________________________________________________________________________________________ */
+
+/* drop-search */
+
+.drop-search{
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+    left: 12.5%;
+   margin-top: -15px;
+    border: 1px solid black;
+    height: 400px;
+width: 576px;
+/* border-top-right-radius: 14px; */
+/* border-top-left-radius: 14px; */
+
+border-bottom-left-radius: 28px;
+border-bottom-right-radius: 28px;
+background-color: #fff;
+box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+border-color: rgba(223,225,229,0);
+
+/* border-top-left-radius: 8px; */
+}
+.drop-search>a:hover{
+    background-color: #f9f9fa;
+}
+.drop-search>a{
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: default;
+    /* border: 1px solid brown; */
+    width: 100%;
+    /* left: 12%; */
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+.drop-search>p{
+color: #666666;
+font-weight: 100;
+padding: 10px;
+ font-size: 13px;
+}
+.drop-search>hr{
+    color: rgba(223,225,229,0);;
+    width: 90%;
+    /* margin-top: 10px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+#drop-search-display{
+    /* display: none; */
+    visibility: hidden;
+    position: absolute;
+    top: -200%;
+}
+
+
+
+/* _______________________________________ */
+
+.happy{
+    display: flex;
+    /* border: 1px solid black; */
+    gap: 12px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.happy>div{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+  display: flex;
+  align-items: center;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 38px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.happy>div:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.lang{
+    text-align: center;
+    padding: 10px;
+    /* color: whit; */
+    font-weight: 600;
+    /* font-weight: bold; */
+    font-size: 15px;
 }

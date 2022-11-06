@@ -1,0 +1,225 @@
+.about{
+    /* border: 1px solid black; */
+    width: 50%;
+    position: relative;
+    left: 12.5%;
+    padding: 5px;
+    padding-top: 10px;
+    color: #888085;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.box-details{
+    width: 45%;
+    padding-right: 50px;
+    position: relative;
+    left: 12.5%;
+    z-index: 0;
+    /* cursor: pointer; */
+    /* border: 1px solid black; */
+    /* padding: 40px; */
+}
+.box-details>span{
+    color: #2d363f;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.box-details>h3{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #1a0dab;
+    z-index: 5;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: arial, sans-serif;
+}
+.box-details>h3:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.box-details>p{
+    color:  #4d5156;
+    line-height: 20px;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+
+
+/* People also Ask -----------------------------------------------------------------*/
+
+
+.container {
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-right: 4rem;
+    padding-left: 2rem;
+    position: absolute;
+    left: 10%;
+    width: 42rem;
+    /* border: 1px solid black; */
+  }
+  .container>h2{
+    font-family: Google Sans,arial,sans-serif;
+    font-weight: 400;
+    /* line-height: 20px; */
+    font-size: 22px;
+  }
+  .accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  /* .accordion .accordion-item button[aria-expanded=true] {
+    border-bottom: 1px solid #03b5d2;
+  } */
+  .accordion button {
+    position: relative;
+    /* display: block; */
+    text-align: left;
+    width: 100%;
+    padding: 0.9em 0;
+    color: #202124;
+   font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    background: none;
+    /* outline: none; */
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .accordion button:hover, .accordion button:focus {
+    cursor: pointer;
+    /* color: #03b5d2; */
+  }
+  .accordion button:hover::after, .accordion button:focus::after {
+    cursor: pointer;
+  
+  }
+ 
+  .accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+  }
+  .accordion button .icon::before {
+    display: block;
+    position: absolute;
+    /* content: ""; */
+   
+
+  
+    /* margin: 5px 0px 5px 12px; */
+    /* top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;  */
+    background: currentColor;
+  }
+  .accordion button .icon::after {
+    display: block;
+    position: absolute;
+  
+    /* content: "";
+     top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;  */
+    background: currentColor;
+  }
+  /* .accordion button[aria-expanded=true] {
+    color: #03b5d2;
+  } */
+  /* .accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+  } */
+  .accordion button[aria-expanded=true] + .accordion-content {
+    opacity: 1;
+    max-height: 8em;
+    transition: all 400ms linear;
+    will-change: opacity, max-height;
+  }
+  .accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 400ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .accordion .accordion-content>p {
+    font-size: 16px;
+    color: #202124;
+    font-family: Arial, sans-serif;
+    line-height: 25px;
+    font-weight: 100;
+    width: 95%;
+    margin: 3px;
+    margin-bottom: 15px;
+  }
+
+  /* _________________________________________________________________ */
+
+  .bottem-content{
+    /* border: 1px solid black; */
+    
+    position: absolute;
+    top: 85%;
+    left: 12%;
+  }
+
+  .box-details2{
+    width: 50%;
+    padding-bottom: 10px;
+    position: relative;
+    /* left: 12.5%; */
+    z-index: 0;
+    margin-bottom: 20px;
+  }
+
+  .box-details2>span{
+    color: #2d363f;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.box-details2>h3{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #1a0dab;
+    z-index: 5;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: arial, sans-serif;
+}
+.box-details2>h3:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.box-details2>p{
+    color:  #4d5156;
+    line-height: 20px;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.box-details2>li{
+  color:  #4d5156;
+  line-height: 20px;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.imagesss>img{
+width: 150px;
+height: 150px;
+margin-left: 10px;
+}
